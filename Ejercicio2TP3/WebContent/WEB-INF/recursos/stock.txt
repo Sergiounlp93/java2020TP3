@@ -1,0 +1,5 @@
+Chocolate,1.25
+chupetin,0.90
+caramelo,0.10
+chicle,0.05
+pastilla,1

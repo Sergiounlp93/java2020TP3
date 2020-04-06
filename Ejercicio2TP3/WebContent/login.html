@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TAG DE SOPORTE PARA EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+	<!-- ENLACES A HOJAS DE ESTILO LOCALES Y A FUENTE DE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<!-- ENCABEZADO -->
+    <header class="site-header"></header>
+    <h1></h1>
+    <img src="carrito.jpg" alt="Imagen Principal">
+    
+    <!-- CUERPO PRINCIPAL -->
+    <main class="contenedor seccion contenido-centrado">
+        <h3 class="fw-300 centrar-texto">Completar el formulario para ingresar</h3>
+		<!-- ESTRUCTURA DEL FORMULARIO -->
+        <form class="contacto" action="loginUsr" method="post">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombreUsuario">Nombre de usuario:</label>
+                <input type="text" name="userName"  id="nombreUsuario" placeholder="Tu Nombre de Usuario"required>
+                
+				<label for="contraseña">Contraseña:</label>
+                <input type="password" name="Pass" id="contraseña" placeholder="Tu Contraseña"required>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="firtsName" id="nombre" placeholder="Tu Nombre" required>
+                
+				<label for="apellido">Apellido:</label>
+                <input type="text" name="lastName" id="apellido" placeholder="Tu Apellido" required>
+
+                <label for="codigoPostal">Codigo Postal: </label>
+                <input type="text" name="postal" id="CodigoPostal" placeholder="Tu Codigo postal: XXXX (0-9)" pattern="[0-9]*" required>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
+            
+        </form>
+		<!--FIN DE LA ESTRUCTURA DEL FORMULARIO -->        
+    </main>
+    
+	<!-- FOOTER -->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion"></nav>
+            <p class="copyright">Todos los Derechos Reservados 2020 &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
